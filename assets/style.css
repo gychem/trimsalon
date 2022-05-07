@@ -1,0 +1,209 @@
+header {
+  background-image: url("images/header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+header section {
+  display: flex;
+}
+header #container-logo {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  height: 400px;
+  margin-left: 200px;
+}
+header #container-logo #logo {
+  background-image: url("images/logo3.png");
+  background-repeat: no-repeat;
+  margin-top: 100px;
+  width: 600px;
+  height: 400px;
+}
+header nav {
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  margin-right: 100px;
+  margin-top: 30px;
+}
+header nav ul {
+  list-style-type: none;
+}
+header nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+  font-size: x-large;
+  text-transform: uppercase;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+header nav ul li a:hover {
+  color: #D0C1AE;
+}
+header #header_image_slider {
+  background-color: rgba(208, 193, 174, 0.5);
+  bottom: 0;
+  padding-bottom: 20px;
+  position: absolute;
+  display: flex;
+  width: 100%;
+}
+
+footer {
+  background-color: #3E3E3E;
+  color: white;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 18px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: calibri;
+}
+body #diensten {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+body #diensten .flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 200px;
+  border-radius: 10px;
+  perspective: 1000px;
+}
+body #diensten .flip-card .flip-card-inner {
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+body #diensten .flip-card .flip-card-inner .flip-card-front, body #diensten .flip-card .flip-card-inner .flip-card-back {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+}
+body #diensten .flip-card .flip-card-inner .flip-card-front {
+  border-radius: 10px;
+  background-color: #bbb;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #diensten .flip-card .flip-card-inner .flip-card-front p {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 0%;
+  width: auto;
+  position: absolute;
+  padding: 5px;
+}
+body #diensten .flip-card .flip-card-inner .flip-card-back {
+  border-radius: 10px;
+  width: 400px;
+  height: 200px;
+  background-color: #3E3E3E;
+  color: white;
+  transform: rotateY(180deg);
+}
+body #diensten .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+body .container {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .container .section_title {
+  margin-top: 70px;
+  font-size: 30px;
+  margin: 0;
+}
+body .container main {
+  margin-top: 20px;
+  width: 65%;
+}
+body .container main section {
+  display: flex;
+  justify-content: center;
+}
+body .container main section img {
+  width: 250px;
+  border-radius: 10px;
+}
+body .container main section p {
+  margin: 0px;
+  width: 100%;
+  font-size: 20px;
+  margin-left: 10px;
+}
+body .container main section #dogheads-image {
+  background-image: url("./images/dogheads.png");
+  width: 558px;
+  height: 163px;
+  margin-bottom: -70px;
+  margin-top: 100px;
+  margin-left: 27%;
+}
+body .container main section #contact-left {
+  width: 40%;
+}
+body .container main section #contact-left #contact-info {
+  display: flex;
+  width: 440px;
+  padding: 10px;
+  color: white;
+  background-color: #3E3E3E;
+  border-radius: 10px;
+}
+body .container main section #contact-left .contact_input {
+  color: black;
+  border: 0px;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 5px;
+  width: 450px;
+  height: 35px;
+}
+body .container main section #contact-left .contact_input_message {
+  color: black;
+  border: 0px;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 5px;
+  width: 450px;
+  height: 175px;
+}
+body .container main section #contact-left .contact_button {
+  color: white;
+  border: 0px;
+  width: 460px;
+  height: 45px;
+  border-radius: 10px;
+  margin-top: 5px;
+  background-color: #3E3E3E;
+}
+body .container main section #contact-left .contact_button:hover {
+  background-color: #4D4D4D;
+}
+.container_bg_colored {
+  background-color: rgb(208, 193, 174);
+  padding-bottom: 100px;
+}
+
+.direction_column {
+  flex-direction: column;
+}/*# sourceMappingURL=style.css.map */

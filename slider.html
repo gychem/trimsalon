@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .marquee { width: 1600px; height: 290px; overflow: hidden; }
+        .marquee-content { display: flex; list-style: none; animation: scrolling 10s linear infinite; }
+        .marquee-item { height: 290px; width: 200px; flex-shrink: 0; }
+        .marquee-image { height: 100%; width: 100%; }
+    
+        @keyframes scrolling {
+            0% { transform: translateX(0); }
+            100% { transform: translatex(-1000px); }
+        } 
+    </style>
+</head>
+<body>
+    
+<div class="margindiv">
+    <div style="margin: 0 auto; max-width: 1600px;">
+        <div class="marquee">
+            <ul class="marquee-content">
+                <li class="marquee-item"><img src="assets/images/honden/Afbeelding1-na.jpg" height="300px" width="200px"></img></li>
+                <li class="marquee-item"><img src="assets/images/honden/Afbeelding2-na.jpg" height="300px" width="200px"></img></li>
+                <li class="marquee-item"><img src="assets/images/honden/Afbeelding2-na2.jpg" height="300px" width="200px"></img></li>
+                <li class="marquee-item"><img src="assets/images/honden/Afbeelding4.jpg" height="300px" width="200px"></img></li>
+                <li class="marquee-item"><img src="assets/images/honden/Afbeelding5.jpg" height="300px" width="200px"></img></li>
+
+                <!-- Repeat 4 elements -->
+                <li class="marquee-item"><img src="assets/images/honden/Afbeelding5-2.jpg" height="300px" width="200px"></li>
+                <li class="marquee-item"><img src="assets/images/honden/Afbeelding6.jpg" height="300px" width="200px"></li>
+                <li class="marquee-item"><img src="assets/images/honden/Afbeelding6-2.jpg" height="300px" width="200px"></img></li>
+                <li class="marquee-item"><img src="assets/images/honden/Afbeelding7.jpg" height="300px" width="200px"></img></li>
+                
+                <li class="marquee-item"><img src="assets/images/honden/Afbeelding8.jpg" height="300px" width="200px"></img></li>
+                <li class="marquee-item"><img src="assets/images/honden/Afbeelding9.jpg" height="300px" width="200px"></img></li>
+                <li class="marquee-item"><img src="assets/images/honden/Afbeelding10.jpg" height="300px" width="200px"></img></li>
+                <li class="marquee-item"><img src="assets/images/honden/Afbeelding11.jpg" height="300px" width="200px"></img></li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+	
+    

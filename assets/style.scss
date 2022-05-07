@@ -1,0 +1,157 @@
+@import 'header.scss';
+@import 'footer.scss';
+
+body { 
+    margin: 0; 
+    padding: 0; 
+    font-family: calibri;
+   
+    #diensten {
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+
+        .flip-card {
+            background-color: transparent;
+            width: 400px;
+            height: 200px;
+            border-radius: 10px;
+            perspective: 1000px; 
+
+            .flip-card-inner {
+                text-align: center;
+                transition: transform 0.8s;
+                transform-style: preserve-3d;
+
+                .flip-card-front, .flip-card-back {
+                    position: absolute;
+                    -webkit-backface-visibility: hidden; /* Safari */
+                    backface-visibility: hidden;
+                    }
+                
+                .flip-card-front {
+                border-radius: 10px;
+                background-color: #bbb;
+                color: black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                }
+
+                .flip-card-front p {
+                    background-color: rgb(255, 255, 255, 0.5);
+                    width: 0%;
+                    width: auto;
+                    position: absolute;
+                    padding: 5px;
+                }
+            
+                .flip-card-back {
+                border-radius: 10px;
+                width: 400px;
+                height: 200px;
+                background-color: #3E3E3E;
+                color: white;
+                transform: rotateY(180deg);
+                }
+                }
+            }
+
+            .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+            }
+    }
+
+
+    .container { 
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .section_title { margin-top: 70px; font-size: 30px; margin: 0; }
+
+        main { 
+            margin-top: 20px;
+            width: 65%;
+
+            section {
+                display: flex;
+                justify-content: center;
+                img { width: 250px; border-radius: 10px; }
+                p { margin: 0px; width: 100%; font-size: 20px; margin-left: 10px; }
+
+                #dogheads-image {
+                    background-image: url('./images/dogheads.png');
+                    width: 558px;
+                    height: 163px;
+                    margin-bottom: -70px;
+                    margin-top: 100px;
+                    margin-left: 27%;
+                }
+
+                #contact-left {
+                    width: 40%;
+
+                    #contact-info {
+                        display: flex;
+                        width: 440px;
+                        padding: 10px;
+                        color: white;
+                        background-color: #3E3E3E;
+                        border-radius: 10px;
+                    }
+
+                    .contact_input {
+                        color: black;
+                        border: 0px;
+                        border-radius: 10px;
+                        margin-top: 10px;
+                        padding: 5px;
+                        width: 450px;
+                        height: 35px;
+                    }
+                    
+                    .contact_input_message {
+                        color: black;
+                        border: 0px;
+                        border-radius: 10px;
+                        margin-top: 10px;
+                        padding: 5px;
+                        width: 450px;
+                        height: 175px;
+                    }
+                    
+                    .contact_button {
+                        color: white;
+                        border: 0px;
+                        width: 460px;
+                        height: 45px;
+                        border-radius: 10px;
+                        margin-top: 5px;
+                        background-color: #3E3E3E;
+
+                        &:hover {
+                            background-color: #4D4D4D;
+                        }
+                    }
+                }
+
+                #contact-right {
+                
+                }
+            }
+        }   
+    }
+}
+
+.container_bg_colored {
+    background-color: rgb(208, 193, 174, 1);
+    padding-bottom: 100px;
+}
+
+.direction_column {
+    flex-direction: column;
+}
