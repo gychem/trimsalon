@@ -1,8 +1,10 @@
 
-@import 'footer.scss';
-
+//@import 'https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap';
 @import 'https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap';
 
+html {
+	scroll-behavior: smooth;
+}
 
 body { 
     margin: 0; 
@@ -130,6 +132,16 @@ body {
             width: 100%;
         }
     }
+
+    #mijn_verhaal {
+        color: #908490;
+
+        h1 {
+            color: #696069;
+        }
+
+
+    }
    
     #diensten {
         display: flex;
@@ -196,7 +208,13 @@ body {
         justify-content: center;
         align-items: center;
 
-        .section_title { margin-top: 70px; font-size: 30px; margin: 0; }
+        .section_title { 
+            margin-top: 70px; 
+            font-size: 30px; 
+            margin: 0; 
+            font-family: 'Roboto', sans-serif;
+            color: #696069;
+        }
 
         main { 
             margin-top: 20px;
@@ -279,4 +297,29 @@ body {
 
 .direction_column {
     flex-direction: column;
+}
+
+footer {
+    background-color: #3E3E3E;
+    color: white;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 18px;
+
+    #footer_copyright {
+        display: flex;
+
+        #footer_copyright_name {
+            font-weight: bold;
+            margin-left: 5px;
+        
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
 }

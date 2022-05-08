@@ -1,13 +1,6 @@
 @import 'https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap';
-footer {
-  background-color: #3E3E3E;
-  color: white;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-size: 18px;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -128,6 +121,12 @@ body header #header_image_slider {
   display: flex;
   width: 100%;
 }
+body #mijn_verhaal {
+  color: #908490;
+}
+body #mijn_verhaal h1 {
+  color: #696069;
+}
 body #diensten {
   display: flex;
   gap: 10px;
@@ -189,6 +188,8 @@ body .container .section_title {
   margin-top: 70px;
   font-size: 30px;
   margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #696069;
 }
 body .container main {
   margin-top: 20px;
@@ -264,4 +265,26 @@ body .container main section #contact-left .contact_button:hover {
 
 .direction_column {
   flex-direction: column;
+}
+
+footer {
+  background-color: #3E3E3E;
+  color: white;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 18px;
+}
+footer #footer_copyright {
+  display: flex;
+}
+footer #footer_copyright #footer_copyright_name {
+  font-weight: bold;
+  margin-left: 5px;
+}
+footer #footer_copyright #footer_copyright_name a {
+  text-decoration: none;
+  color: white;
 }/*# sourceMappingURL=style.css.map */
