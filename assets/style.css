@@ -52,10 +52,40 @@ body header #navbar_top {
   width: calc(100% - 100px);
   padding-right: 100px;
   padding-top: 5px;
+  padding-bottom: 5px;
   color: white;
 }
-body header #navbar_top i {
+body header #navbar_top p {
+  padding: 0;
+  margin: 0;
   margin-right: 5px;
+  margin-top: 2px;
+}
+body header #navbar_top a {
+  text-decoration: none;
+  color: white;
+}
+body header #navbar_top #tab_facebook {
+  background: #0C88EF;
+  padding: 2px 5px 5px 5px;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+body header #navbar_top #tab_facebook:hover {
+  background: #0b72c7;
+}
+body header #navbar_top #tab_instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #d6249f 0%, #fd5949 45%, #d6249f);
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  height: 22px;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+body header #navbar_top #tab_instagram:hover {
+  filter: grayscale(20%);
+  color: white;
 }
 body header nav {
   display: flex;
